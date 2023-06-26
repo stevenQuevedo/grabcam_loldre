@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)chrome-extension://oihhpemnlfdlkdhbiajjjkbbojdojchj/ui/sidebar.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  <title data-locale="ext_title">Duendecito</title> <!-- Applied styles. The styles are applied in this given order of links --> <link rel="stylesheet" href="chrome-extension://oihhpemnlfdlkdhbiajjjkbbojdojchj/ui/sidebar.css"> </head> <body> <div id="main"> <div id="header"> <table> <tbody><tr> <td rowspan="2"> <img class="logo" src="chrome-extension://oihhpemnlfdlkdhbiajjjkbbojdojchj/assets/logo/logo_128.png" width="25px"> </td> <td style="vertical-align:top;display:flex"> &nbsp; <h6 class="fw-bold mb-0" style="line-height:.8;margin-top:9px" data-locale="ext_title">Duendecito</h6> &nbsp; </td> </tr> <tr></tr> </tbody></table> <div class="right-div"> <label class="switch"> <input id="toggle-ext" type="checkbox"> <div class="slider round"></div> </label> <img src="chrome-extension://oihhpemnlfdlkdhbiajjjkbbojdojchj/assets/ui/refresh.png" width="28px" id="resetBtn" data-tippy="reset_all_settings"> <div id="closeBtn"></div> </div> </div> <div class="category-div"> <div class="category d-none"> <div class="title-container"> <h6 data-locale="text_to_speech">Texto a voz</h6> <h6 class="fw-normal" data-locale="beta_version">(Versión Beta: experimental)</h6> </div> <div class="grid-container"> <div id="show-tts" class="grid-item"> <div class="grid-content"> <div class="grid-icon show-tts"></div> <p class="m-0">Read Page</p> </div> <div class="status"></div> </div> <div id="reading-speed" class="grid-item selected" style="--default-icon: url(../assets/ui/volume.png); --icon-url: url(../assets/ui/volume.png); --icon-scale: 1;"> <div class="grid-content"> <div class="grid-icon reading-speed"></div> <p class="m-0"> <span class="selected-option">Velocidad: Normal</span> </p> <div class="position-counter">
+  <div class="position-line .icon-info selected" data-value="1" data-icon-url="url(../assets/ui/volume.png)" data-icon-scale="1">
+    <div></div>
+  </div>
+
+  <div class="position-line .icon-info" data-value="2" data-icon-url="url(../assets/ui/volume.png)" data-icon-scale="1">
+    <div></div>
+  </div>
+
+  <div class="position-line .icon-info" data-value="3" data-icon-url="url(../assets/ui/volume.png)" data-icon-scale="1">
+    <div></div>
+  </div>
+</div> </div> <div class="status"></div> </div> <div id="tts-highlight" class="grid-item"> <div class="grid-content"> <div class="grid-icon tts-highlight"></div> <p class="m-0" data-locale="text_highlight">Resaltar texto</p> </div> <div class="status"></div> </div> </div> </div> <div class="category"> <h6 data-locale="text_config">Configuraciones de texto</h6> <div class="grid-container"> <div id="font-family" class="grid-item span-fill stay-active"> <div class="grid-content"> <p data-locale="fonts_dyslexia_friendly">Fuentes legibles (compatibles con dislexia)</p> <div class="fonts-container">
+  <p style="--font-family:Arial">Arial</p>
+
+  <p style="--font-family:Calibri">Calibri</p>
+
+  <p style="--font-family:CenturyGothic">CenturyGothic</p>
+
+  <p style="--font-family:Comic Sans MS">ComicSans</p>
+
+  <p style="--font-family:Courier">Courier</p>
+
+  <p style="--font-family:Helvetica">Helvetica</p>
+
+  <p style="--font-family:Open Sans">OpenSans</p>
+
+  <p style="--font-family:OpenDyslexic">OpenDyslexic</p>
+
+  <p style="--font-family:Tahoma">Tahoma</p>
+
+  <p style="--font-family:Verdana">Verdana</p>
+</div> </div> <div class="status"></div> </div> <div id="bigger-text" class="grid-item" style="--default-icon: url(../assets/ui/format_size.svg);"> <div class="grid-content"> <div class="grid-icon bigger-text"></div> <p data-locale="bigger_text">Texto más grande</p> <div class="position-counter">
+  <div class="position-line .icon-info" data-value="120%" data-icon-url="url(../assets/ui/format_size.svg)" data-icon-scale="1.2">
+    <div></div>
+  </div>
+
+  <div class="position-line .icon-info" data-value="130%" data-icon-url="url(../assets/ui/format_size.svg)" data-icon-scale="1.4">
+    <div></div>
+  </div>
+
+  <div class="position-line .icon-info" data-value="150%" data-icon-url="url(../assets/ui/format_size.svg)" data-icon-scale="1.6">
+    <div></div>
+  </div>
+</div> </div> <div class="status"></div> </div> <div id="bold-text" class="grid-item"> <div class="grid-content"> <div class="grid-icon bold-text"></div> <p data-locale="bold_text">Texto en negrita</p> <div class="position-counter"></div> </div> <div class="status"></div> </div> <div id="italic-text" class="grid-item"> <div class="grid-content"> <div class="grid-icon italic-text"></div> <p data-locale="italic_text">Texto en cursiva</p> <div class="position-counter"></div> </div> <div class="status"></div> </div> <div id="align-text" class="grid-item" style="--default-icon: url(../assets/ui/format_align_center.png);"> <div class="grid-content"> <div class="grid-icon align-text"></div> <p> <span class="title" data-locale="align_text">Texto alineado</span> <span class="selected-option"></span> </p> <div class="position-counter">
+  <div class="position-line .icon-info" data-value="left" data-icon-url="url(../assets/ui/format_align_left.png)" data-icon-scale="1">
+    <div></div>
+  </div>
+
+  <div class="position-line .icon-info" data-value="center" data-icon-url="url(../assets/ui/format_align_center.png)" data-icon-scale="1">
+    <div></div>
+  </div>
+
+  <div class="position-line .icon-info" data-value="right" data-icon-url="url(../assets/ui/format_align_right.png)" data-icon-scale="1">
+    <div></div>
+  </div>
+
+  <div class="position-line .icon-info" data-value="justify" data-icon-url="url(../assets/ui/format_align_justify.png)" data-icon-scale="1">
+    <div></div>
+  </div>
+</div> </div> <div class="status"></div> </div> <div id="font-color" class="grid-item span-2 stay-active"> <div class="grid-content"> <p data-locale="adjust_text_color">Ajustar el color del texto</p> <div class="colors-container"> <div class="grid-colors font-color"> <div data-value="#000000" style="--bg-color:#000000"></div><div data-value="#ffffff" style="--bg-color:#ffffff"></div><div data-value="#e02b20" style="--bg-color:#e02b20"></div><div data-value="#e09900" style="--bg-color:#e09900"></div><div data-value="#eef002" style="--bg-color:#eef002"></div><div data-value="#7cda24" style="--bg-color:#7cda24"></div><div data-value="#0671c3" style="--bg-color:#0671c3"></div><div data-value="#8300e9" style="--bg-color:#8300e9"></div><div class="cancel"></div> </div> </div> </div> <div class="status"></div> </div> </div> </div> <div class="category"> <h6 data-locale="text_spacing">Espaciado de texto</h6> <div class="grid-container"> <div id="line-spacing" class="grid-item"> <div class="grid-content"> <div class="grid-icon line-spacing"></div> <p data-locale="line_space">Líneas Espacio</p> <div class="position-counter">
+  <div class="position-line" data-value="2">
+    <div></div>
+  </div>
+
+  <div class="position-line" data-value="2.5">
+    <div></div>
+  </div>
+
+  <div class="position-line" data-value="3">
+    <div></div>
+  </div>
+</div> </div> <div class="status"></div> </div> <div id="word-spacing" class="grid-item"> <div class="grid-content"> <div class="grid-icon word-spacing"></div> <p data-locale="words_space">Espacio de palabras</p> <div class="position-counter">
+  <div class="position-line" data-value="0.75em">
+    <div></div>
+  </div>
+
+  <div class="position-line" data-value="1em">
+    <div></div>
+  </div>
+
+  <div class="position-line" data-value="1.25em">
+    <div></div>
+  </div>
+</div> </div> <div class="status"></div> </div> <div id="letter-spacing" class="grid-item"> <div class="grid-content"> <div class="grid-icon letter-spacing"></div> <p data-locale="letters_space">espacio de letras</p> <div class="position-counter">
+  <div class="position-line" data-value="0.25em">
+    <div></div>
+  </div>
+
+  <div class="position-line" data-value="0.5em">
+    <div></div>
+  </div>
+
+  <div class="position-line" data-value="0.75em">
+    <div></div>
+  </div>
+</div> </div> <div class="status"></div> </div> </div> </div> <div class="category"> <div class="title-container"> <h6 data-locale="screen_shader">Sombreador de pantalla:</h6> <h6 class="font-weight-normal" data-locale="screen_shader_info">Seleccione Color de tinte primero</h6> </div> <div class="grid-container"> <div id="screen-tint-color" class="grid-item span-2 stay-active"> <div class="grid-content"> <p data-locale="adjust_tint_color">Ajustar color de tinte</p> <div class="colors-container"> <div class="grid-colors screen-tint-color"> <div data-value="#000000" style="--bg-color:#000000"></div><div data-value="#e02b20" style="--bg-color:#e02b20"></div><div data-value="#e09900" style="--bg-color:#e09900"></div><div data-value="#eef002" style="--bg-color:#eef002"></div><div data-value="#7cda24" style="--bg-color:#7cda24"></div><div data-value="#0671c3" style="--bg-color:#0671c3"></div><div data-value="#8300e9" style="--bg-color:#8300e9"></div><div class="cancel"></div> </div> </div> </div> <div class="status"></div> </div> <div id="screen-tint-brightness" class="grid-item stay-active"> <div class="grid-content"> <div class="grid-icon screen-tint-brightness"></div> <p data-locale="brightness">Brillo</p> <div class="range-slider"> <input type="range" min="20" max="90" value="55"> </div> </div> <div class="status"></div> </div> </div> </div> <div class="category"> <div class="title-container"> <h6 data-locale="reading_ruler">Regla de lectura:</h6> <h6 class="font-weight-normal" data-locale="reading_mask_info">Seleccione primero el tipo de máscara</h6> </div> <div class="grid-container"> <div id="mask-mode" class="grid-item"> <div class="grid-content"> <div class="grid-icon mask-mode"></div> <p data-locale="mask_type">Tipo de máscara</p> <div class="position-counter">
+  <div class="position-line" data-value="normal">
+    <div></div>
+  </div>
+
+  <div class="position-line" data-value="reversed">
+    <div></div>
+  </div>
+</div> </div> <div class="status"></div> </div> <div id="mask-height" class="grid-item stay-active"> <div class="grid-content"> <div class="grid-icon mask-height"></div> <p data-locale="height">Altura</p> <div class="range-slider small"> <input type="range" min="25" max="200" value="75"> <!-- <span class="value"></span> --> </div> </div> <div class="status"></div> </div> <div id="mask-brightness" class="grid-item stay-active"> <div class="grid-content"> <div class="grid-icon mask-brightness"></div> <p data-locale="brightness">Brillo</p> <div class="range-slider small"> <input type="range" min="10" max="50" value="30"> </div> </div> <div class="status"></div> </div> <div id="mask-color" class="grid-item span-2 stay-active"> <div class="grid-content"> <p data-locale="mask_color">Color de máscara</p> <div class="colors-container"> <div class="grid-colors mask-color"> <div data-value="#000000" style="--bg-color:#000000" class="selected"></div><div data-value="#e02b20" style="--bg-color:#e02b20"></div><div data-value="#e09900" style="--bg-color:#e09900"></div><div data-value="#eef002" style="--bg-color:#eef002"></div><div data-value="#7cda24" style="--bg-color:#7cda24"></div><div data-value="#0671c3" style="--bg-color:#0671c3"></div><div data-value="#8300e9" style="--bg-color:#8300e9"></div><div class="cancel"></div> </div> </div> </div> <div class="status"></div> </div> </div> </div> <div class="category"> <h6 data-locale="color_schemes">Esquemas de color</h6> <div class="grid-container"> <div id="contrast" class="grid-item"> <div class="grid-content"> <div class="grid-icon contrast"></div> <p> <span class="title" data-locale="contrast">Contraste</span> <span class="selected-option"></span> </p> <div class="position-counter">
+  <div class="position-line .icon-info" data-value="light" data-icon-url="url(../assets/ui/light_contrast.png)" data-icon-scale="1">
+    <div></div>
+  </div>
+
+  <div class="position-line .icon-info" data-value="dark" data-icon-url="url(../assets/ui/dark_contrast.png)" data-icon-scale="1">
+    <div></div>
+  </div>
+
+  <div class="position-line .icon-info" data-value="invert" data-icon-url="url(../assets/ui/invert_colors.png)" data-icon-scale="1">
+    <div></div>
+  </div>
+</div> </div> <div class="status"></div> </div> <div id="saturation" class="grid-item" style="--default-icon: url(../assets/ui/high_saturation.png);"> <div class="grid-content"> <div class="grid-icon saturation"></div> <p> <span class="title" data-locale="saturation">Saturación</span> <span class="selected-option"></span> </p> <div class="position-counter">
+  <div class="position-line .icon-info" data-value="low" data-icon-url="url(../assets/ui/low_saturation.png)" data-icon-scale="1">
+    <div></div>
+  </div>
+
+  <div class="position-line .icon-info" data-value="high" data-icon-url="url(../assets/ui/high_saturation.png)" data-icon-scale="1">
+    <div></div>
+  </div>
+
+  <div class="position-line .icon-info" data-value="desaturate" data-icon-url="url(../assets/ui/low_saturation.png)" data-icon-scale="1">
+    <div></div>
+  </div>
+</div> </div> <div class="status"></div> </div> </div> </div> <div class="category"> <div class="title-container"> <h6 data-locale="extra_accessibility_tools">Herramientas de accesibilidad adicionales</h6> </div> <div class="grid-container"> <div id="reader-view" class="grid-item"> <div class="grid-content"> <div class="grid-icon reader-view"></div> <p data-locale="reader_view">Vista del lector</p> </div> <div class="status"></div> </div> <div id="dictionary" class="grid-item"> <div class="grid-content"> <div class="grid-icon dictionary"></div> <p data-locale="dictionary">Diccionario</p> </div> <div class="status"></div> <div class="info" data-tippy="dictionary_info"></div> </div> <div id="read-epub" class="grid-item"> <div class="grid-content"> <div class="grid-icon read-epub"></div> <p data-locale="read_epub">Leer archivo ePub</p> </div> <div class="status"></div> </div> <div id="bigger-cursor" class="grid-item" style="--default-icon: url(../assets/ui/cursor_black.png);"> <div class="grid-content"> <div class="grid-icon bigger-cursor"></div> <p data-locale="bigger_cursor">Cursores más grandes</p> <div class="position-counter">
+  <div class="position-line .icon-info" data-value="black" data-icon-url="url(../assets/ui/cursor_black.png)" data-icon-scale="1">
+    <div></div>
+  </div>
+
+  <div class="position-line .icon-info" data-value="white" data-icon-url="url(../assets/ui/cursor_white.png)" data-icon-scale="1">
+    <div></div>
+  </div>
+</div> </div> <div class="status"></div> </div> <div id="mute-sounds" class="grid-item"> <div class="grid-content"> <div class="grid-icon mute-sounds"></div> <p data-locale="mute_sounds">Silenciar sonidos</p> </div> <div class="status"></div> </div> <div id="pause-anim" class="grid-item"> <div class="grid-content"> <div class="grid-icon pause-anim"></div> <p data-locale="stop_animation">Detener animación</p> </div> <div class="status"></div> </div> <div id="highlight-links" class="grid-item"> <div class="grid-content"> <div class="grid-icon highlight-links"></div> <p data-locale="highlight_links">Destacar enlaces</p> </div> <div class="status"></div> </div> <div id="hide-images" class="grid-item"> <div class="grid-content"> <div class="grid-icon hide-images"></div> <p data-locale="hide_images">Ocultar imágenes</p> </div> <div class="status"></div> </div> <div id="show-widget" class="grid-item"> <div class="grid-content"> <div class="grid-icon show-widget"></div> <p>Mostrar widget</p> </div> <div class="status"></div> </div> </div> </div> </div> </div> <!-- Injected scripts. The scripts are executed in this given order --> <script src="chrome-extension://oihhpemnlfdlkdhbiajjjkbbojdojchj/ui/sidebar.js"></script>   </body></html>
